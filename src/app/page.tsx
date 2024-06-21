@@ -61,7 +61,6 @@ export default function Home() {
       <h1 className="relative text-3xl font-semibold capitalize ">
         AI image manager
       </h1>
-      <div>
         {url &&
           <div className="flex flex-col items-center justify-center">
             <Image src={url} onLoadingComplete={() => setLoading(false)} width={500} height={500} alt="ai image" />
@@ -87,8 +86,6 @@ export default function Home() {
           </div>
           : null
         }
-      </div>
-      <div>
         <div className="flex items-center justify-between">
           <input type="text" placeholder="Enter an image prompt" name="value" onChange={(e) => { setValue(e.target.value) }}
             className="bg-gray-100 placeholder:text-gray-400 disabled:cursor-not-allowed border border-gray-500 text-gray-900 text-sm rounded-lg block p-3.5 mr-2 w-[600px]"
@@ -99,7 +96,6 @@ export default function Home() {
             {loading ? <Loader /> : <FaRegPaperPlane />}
           </button>
         </div>
-      </div>
     </main>
   );
 }
