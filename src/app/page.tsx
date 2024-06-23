@@ -46,6 +46,7 @@ export default function Home() {
       if (response.ok) {
         const data = await response.json();
         setUrl(data.image_url)
+        setValue("")
       }
     } catch (error) {
       // Handle network errors or other exceptions
