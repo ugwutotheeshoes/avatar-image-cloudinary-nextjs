@@ -99,7 +99,6 @@ export default function Home() {
         </div>
         : null
       }
-      <form>
         <div className="grid grid-cols-2 gap-2">
           <input type="text" placeholder="First Name" name="value" onChange={(e) => { setFirstName(e.target.value) }}
             className="bg-gray-100 placeholder:text-gray-400 disabled:cursor-not-allowed border border-gray-500 text-gray-900 text-sm rounded-lg block p-3.5 mr-2 w-[290px]"
@@ -119,7 +118,6 @@ export default function Home() {
             {loading ? <Loader /> : "Send"}
           </button>
         </div>
-      </form>
     </main>
   );
 }
