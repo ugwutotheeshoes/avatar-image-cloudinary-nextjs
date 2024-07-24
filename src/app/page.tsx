@@ -75,7 +75,7 @@ export default function Home() {
         <div className="flex flex-col items-center justify-center">
           <div className="relative flex justify-center items-center ">
           <Image src={url} onLoadingComplete={() => setLoading(false)} width={192} height={192} alt="ai image" className="object-cover rounded-full blur-[2px]" />
-            <h1 className="text-6xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center capitalize">{characters}</h1>
+            <h1 className="text-6xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center uppercase">{characters}</h1>
           </div>
           {!loading &&
             <button type="submit" onClick={saveImage} className="flex justify-center text-white border bg-blue-700 hover:bg-blue-800 font-medium relative rounded-lg text-xs px-2.5 py-2.5 text-center mt-3">
